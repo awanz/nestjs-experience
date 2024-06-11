@@ -58,9 +58,18 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-Database Migration by TypeORM
-```
-npm run typeorm -- migration:generate .\src\migrations\initMigrtation
+## Database Migration by TypeORM
+
+```bash
+# generate
+
+yarn migration:generate .\src\migrations\initialTable
+
+# run
+yarn migration:run
+
+# revert
+yarn migration:revert
 ```
 
 ## Support
